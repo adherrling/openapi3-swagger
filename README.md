@@ -156,4 +156,3 @@ Class | Method | HTTP request | Description
 ## Author
 
 support@bungie.com
-
