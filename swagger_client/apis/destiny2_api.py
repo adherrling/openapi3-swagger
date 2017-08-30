@@ -401,7 +401,7 @@ class Destiny2Api(object):
         :param int character_id: ID of the character. (required)
         :param str destiny_membership_id: Destiny membership ID. (required)
         :param str membership_type: A valid non-BungieNet membership type. (required)
-        :param str components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
+        :param list[ComponentsschemasDestinyDestinyComponentType] components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -425,7 +425,7 @@ class Destiny2Api(object):
         :param int character_id: ID of the character. (required)
         :param str destiny_membership_id: Destiny membership ID. (required)
         :param str membership_type: A valid non-BungieNet membership type. (required)
-        :param str components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
+        :param list[ComponentsschemasDestinyDestinyComponentType] components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -470,6 +470,7 @@ class Destiny2Api(object):
         query_params = []
         if 'components' in params:
             query_params.append(('components', params['components']))
+            collection_formats['components'] = 'csv'
 
         header_params = {}
 
