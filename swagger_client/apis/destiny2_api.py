@@ -398,7 +398,7 @@ class Destiny2Api(object):
         >>> result = thread.get()
 
         :param async bool
-        :param str character_id: ID of the character. (required)
+        :param int character_id: ID of the character. (required)
         :param str destiny_membership_id: Destiny membership ID. (required)
         :param str membership_type: A valid non-BungieNet membership type. (required)
         :param str components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
@@ -422,7 +422,7 @@ class Destiny2Api(object):
         >>> result = thread.get()
 
         :param async bool
-        :param str character_id: ID of the character. (required)
+        :param int character_id: ID of the character. (required)
         :param str destiny_membership_id: Destiny membership ID. (required)
         :param str membership_type: A valid non-BungieNet membership type. (required)
         :param str components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
