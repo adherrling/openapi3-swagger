@@ -217,7 +217,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **destiny2_get_character**
-> destiny2_get_character(character_id, destiny_membership_id, membership_type, components=components)
+> InlineResponse200 destiny2_get_character(character_id, destiny_membership_id, membership_type, components=components)
 
 
 
@@ -239,7 +239,8 @@ membership_type = 'membership_type_example' # str | A valid non-BungieNet member
 components = [swagger_client.ComponentsschemasDestinyDestinyComponentType()] # list[ComponentsschemasDestinyDestinyComponentType] | A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results. (optional)
 
 try: 
-    api_instance.destiny2_get_character(character_id, destiny_membership_id, membership_type, components=components)
+    api_response = api_instance.destiny2_get_character(character_id, destiny_membership_id, membership_type, components=components)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling Destiny2Api->destiny2_get_character: %s\n" % e)
 ```
@@ -255,7 +256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 

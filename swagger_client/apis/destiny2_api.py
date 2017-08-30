@@ -402,7 +402,7 @@ class Destiny2Api(object):
         :param str destiny_membership_id: Destiny membership ID. (required)
         :param str membership_type: A valid non-BungieNet membership type. (required)
         :param list[ComponentsschemasDestinyDestinyComponentType] components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
-        :return: None
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -426,7 +426,7 @@ class Destiny2Api(object):
         :param str destiny_membership_id: Destiny membership ID. (required)
         :param str membership_type: A valid non-BungieNet membership type. (required)
         :param list[ComponentsschemasDestinyDestinyComponentType] components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
-        :return: None
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -488,7 +488,7 @@ class Destiny2Api(object):
                                         body=body_params,
                                         post_params=form_params,
                                         files=local_var_files,
-                                        response_type=None,
+                                        response_type='InlineResponse200',
                                         auth_settings=auth_settings,
                                         async=params.get('async'),
                                         _return_http_data_only=params.get('_return_http_data_only'),

@@ -14,6 +14,7 @@
 from __future__ import absolute_import
 
 # import models into sdk package
+from .models.inline_response_200 import InlineResponse200
 
 # import apis into sdk package
 from .apis.community_content_api import CommunityContentApi
