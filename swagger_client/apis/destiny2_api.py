@@ -401,7 +401,7 @@ class Destiny2Api(object):
         :param int character_id: ID of the character. (required)
         :param str destiny_membership_id: Destiny membership ID. (required)
         :param str membership_type: A valid non-BungieNet membership type. (required)
-        :param list[ComponentsschemasDestinyDestinyComponentType] components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
+        :param list[DestinyDestinyComponentType] components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
         :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
@@ -425,7 +425,7 @@ class Destiny2Api(object):
         :param int character_id: ID of the character. (required)
         :param str destiny_membership_id: Destiny membership ID. (required)
         :param str membership_type: A valid non-BungieNet membership type. (required)
-        :param list[ComponentsschemasDestinyDestinyComponentType] components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
+        :param list[DestinyDestinyComponentType] components: A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results.
         :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.

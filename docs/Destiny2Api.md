@@ -236,7 +236,7 @@ api_instance = swagger_client.Destiny2Api()
 character_id = 789 # int | ID of the character.
 destiny_membership_id = 'destiny_membership_id_example' # str | Destiny membership ID.
 membership_type = 'membership_type_example' # str | A valid non-BungieNet membership type.
-components = [swagger_client.ComponentsschemasDestinyDestinyComponentType()] # list[ComponentsschemasDestinyDestinyComponentType] | A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results. (optional)
+components = [swagger_client.DestinyDestinyComponentType()] # list[DestinyDestinyComponentType] | A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results. (optional)
 
 try: 
     api_response = api_instance.destiny2_get_character(character_id, destiny_membership_id, membership_type, components=components)
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
  **character_id** | **int**| ID of the character. | 
  **destiny_membership_id** | **str**| Destiny membership ID. | 
  **membership_type** | **str**| A valid non-BungieNet membership type. | 
- **components** | [**list[ComponentsschemasDestinyDestinyComponentType]**](ComponentsschemasDestinyDestinyComponentType.md)| A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results. | [optional] 
+ **components** | [**list[DestinyDestinyComponentType]**](DestinyDestinyComponentType.md)| A comma separated list of components to return (as strings or numeric values).  See the DestinyComponentType enum for valid components to request.  You must request at least one component to receive results. | [optional] 
 
 ### Return type
 
